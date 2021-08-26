@@ -27,3 +27,6 @@ a NOT
 """
 
 print (anotheranotherString)
+
+print ("C:\\Users\\thaass\\notess.nottxt")
+print (r"C:\Users\thaass\notess.nottxt")
