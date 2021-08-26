@@ -2,9 +2,6 @@
 # binary search O(log n)
 # simple search O(n)
 
-import math
-from typing import Counter
-
 def binary_search(list, item):
     
     low = 0
