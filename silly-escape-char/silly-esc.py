@@ -30,3 +30,13 @@ print (anotheranotherString)
 
 print ("C:\\Users\\thaass\\notess.nottxt")
 print (r"C:\Users\thaass\notess.nottxt")
+
+age = 10101010
+print(age)
+
+# print(type(age, tabString)) <- typeError
+print(type(age))
+print(type(tabString))
+
+age = "2 years"
+print(type(age))
