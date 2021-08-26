@@ -3,11 +3,13 @@
 # simple search O(n)
 
 import math
+from typing import Counter
 
 def binary_search(list, item):
     
     low = 0
     high = len(list) - 1 # len(list) print number of elements (4). We need last array index 3 -> -1
+    counter = 0
 
     while low <= high:
         mid = int((low + high)/2) 
@@ -17,20 +19,30 @@ def binary_search(list, item):
         guess = list[mid] # guessing that item is in the middle
 
         if guess == item: # guessed the number
+            counter = counter +1 
+            print ("Guess number: ")
+            print (counter)
+            print ("Success")
             return mid #return array index
         if guess > item: # item is lower then the guess
+            counter = counter +1 
+            print ("Guess number: ")
+            print (counter)
             high = mid - 1 
             # since high was used and item is lower anyway
             # decrease high index of array by 1 and divide by 2 in the first line of while loop
         else:
+            counter = counter +1 
+            print ("Guess number: ")
+            print (counter)
             low = mid + 1 
             # since low was used and item is higher anyway
             # increase the low index of array by 1 and divide by 2 in the first line of while loop
-    return None # if no right gueeses return None
+    return None # if no right guesses return None
 
-my_list = [1,3,5,7,9] # input
+my_list = [1,3,5,7,9,10,12,25,99,100,605,999,1500,2600] # input
 
-print (binary_search(my_list, 3)) # return array index number or None
+print (binary_search(my_list, 2600)) # return array index number or None
 print (binary_search(my_list, -1)) # return array index number or None
 
 # returns :
