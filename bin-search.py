@@ -19,7 +19,7 @@ def binary_search(list, item):
             counter = counter +1 
             print ("Guess number: ")
             print (counter)
-            print ("Success")
+            print ("Success your number is at the array index number:")
             return mid #return array index
         if guess > item: # item is lower then the guess
             counter = counter +1 
