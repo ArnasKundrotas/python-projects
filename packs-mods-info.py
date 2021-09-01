@@ -3,7 +3,7 @@
 import sys
 
 if __name__ == "__main__":
-    print "Don't do that!"
+    print ("Don't do that!")
     sys.exit()
 
 # Code ensuring that the directory is traversed by Python in order to find all requested modules.
@@ -17,4 +17,4 @@ sys.path.append("D:\\Python\\Project\\Modules")
 # |__ def
 #      |__ mymodule.py
 
-import abc.def.mymodule
+# import abc.def.mymodule
